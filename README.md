@@ -45,6 +45,7 @@ await webR.objs.globalEnv.bind("rawseq", seq);
 ```
 
 Input is then processed like above in `webR.evalR()`
+
 ```javascript
 const result = await webR.evalR(`
     library(stringr)
@@ -63,7 +64,7 @@ const result = await webR.evalR(`
         sep = "\\n"
     )
 ...)
-    ```
+```
 
 ## How do data exist WASM?
 R output is captured in the result variable defined above and then handed back to the DOM via :
